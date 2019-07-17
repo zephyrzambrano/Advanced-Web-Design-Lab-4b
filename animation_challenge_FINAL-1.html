@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+	<title>Animation Challenge</title>
+	<style>
+		
+		/* Put your CSS code below. */
+		
+		#theDeck {
+			position:absolute;
+			width:200px;
+			height:300px;
+			left:800px;
+			top:100px;
+            z-index:100;
+		}
+		
+		
+		@keyframes jackmove {
+		}
+		
+		#theJack {
+			position:absolute;
+			left:800px;
+			top:100px;
+		}
+		#theJack .face {
+			position:absolute;
+			top:0px;
+			left:0px;
+			width:200px;
+			height:300px;
+			border:1px solid black;
+		}
+		
+		
+		@keyframes acemove {
+		}
+		
+		#theAce {
+			position:absolute;
+			left:800px;
+			top:100px;
+		}
+		#theAce .face {
+			position:absolute;
+			top:0px;
+			left:0px;
+			width:200px;
+			height:300px;
+			border:1px solid black;
+		}
+		
+		.back {
+			position:absolute;
+			top:0px;
+			left:0px;
+			border:1px solid black;
+			width:200px;
+			height:300px;
+			background-color:#fff;
+		}
+		
+		
+		@keyframes blackjack {
+		}
+		
+		h1 {
+		}
+		
+		/* Put your CSS code above. */
+	
+	</style>
+</head>
+<body>
+	
+	<h1>Blackjack!</h1>
+	
+    <input type="checkbox" id="hitMe"/>
+    
+	<label id="theDeck" for="hitMe"></label>
+	
+	<div id="theJack">
+		<div class="face">
+			<!-- You may edit below -->
+			J<br/>
+			♥
+			<!-- You may edit above -->
+		</div>
+		<div class="back"></div>
+	</div>
+	
+	<div id="theAce">
+		<div class="face">
+			<!-- You may edit below -->
+			A<br/>
+			♠
+			<!-- You may edit above -->
+		</div>
+		<div class="back"></div>
+	</div>
+	
+</body>
+</html>

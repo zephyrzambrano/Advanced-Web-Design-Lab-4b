@@ -24,24 +24,21 @@
 		@keyframes jackmove {
             from {
                 left: 800px;
-                top: 100px;
             }
             to {
-                left: 0px;
-                top: 100px;
-                
+                left: 300px;
+                transform: rotateY(180deg);
+                backface-visibility: visible;
             }
 		}
-        
-        /*selection {
-            animation-name: jackmove;
-            animation-duration: 4s;
-        }*/
 		
 		#theJack {
 			position:absolute;
 			left:800px;
 			top:100px;
+            transform-style: preserve-3d;
+            z-index: 100;
+            animation: jackmove 5s;
 		}
 		#theJack .face {
 			position:absolute;
@@ -50,6 +47,7 @@
 			width:200px;
 			height:300px;
 			border:1px solid black;
+            backface-visibility: hidden;
 		}
 		
 		
@@ -60,6 +58,8 @@
 			position:absolute;
 			left:800px;
 			top:100px;
+            transform-style: preserve-3d;
+            z-index: 99;
 		}
 		#theAce .face {
 			position:absolute;
@@ -68,6 +68,7 @@
 			width:200px;
 			height:300px;
 			border:1px solid black;
+            backface-visibility: hidden;
 		}
 		
 		.back {
@@ -84,6 +85,7 @@
                 white 10px,
                 red 10px,
                 red 20px);
+            backface-visibility: hidden;
 		}
 		
 		
@@ -94,7 +96,7 @@
 		}
         
         input:checked {
-            
+            ;
         }
 		
 		/* Put your CSS code above. */

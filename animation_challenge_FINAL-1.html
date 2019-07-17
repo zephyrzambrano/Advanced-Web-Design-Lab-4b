@@ -5,11 +5,6 @@
 	<style>
 		
 		/* Put your CSS code below. */
-		h1:hover{
-            transform: matrix(2, 0, 0, 2, 1000, 0);
-            transition-duration:3s;
-                   }
-
 
 		#theDeck {
 			position:absolute;
@@ -91,9 +86,23 @@
 		
 		
 		@keyframes blackjack {
+            
+            from {
+                left: 0px;
+            }
+            to {
+                left: 500px;
+                transform: scale(2);
+            }
+            
 		}
 		
 		h1 {
+            animation: blackjack 5s;
+            animation-delay: 3s;
+            position:absolute;
+			top:0px;
+			left:0px;
 		}
         
         input:checked {

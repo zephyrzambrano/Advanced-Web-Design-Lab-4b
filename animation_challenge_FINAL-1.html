@@ -33,7 +33,7 @@
 			top:100px;
             transform-style: preserve-3d;
             z-index: 100;
-            animation: jackmove 5s;
+            animation: jackmove 2s;
 		}
 		#theJack .face {
 			position:absolute;
@@ -52,9 +52,10 @@
                 left: 800px;
             }
             to {
-                left: 300px;
+                left: 600px;
                 transform: rotateY(180deg);
                 backface-visibility: visible;
+            }
         }
 		
 		#theAce {
@@ -63,7 +64,8 @@
 			top:100px;
             transform-style: preserve-3d;
             z-index: 99;
-            animation: acemove 5s;
+            animation: acemove 2s;
+            animation-delay: 1s;
 		}
 		#theAce .face {
 			position:absolute;
@@ -107,8 +109,8 @@
 		}
 		
 		h1 {
-            animation: blackjack 5s;
-            animation-delay: 3s;
+            animation: blackjack 2s;
+            animation-delay: 2s;
             position:absolute;
 			top:0px;
 			left:0px;

@@ -14,12 +14,20 @@
 			top:100px;
             z-index:100;
             border: 1px solid black;
-            background-image: repeating-linear-gradient(
+            
+            /*
+            Card Back Source
+            http://acbl.mybigcommerce.com/back-of-cards/
+            */
+            background: url(red_back.jpg);
+            background-repeat: no-repeat;
+            background-size: 200px 300px;
+            /*background-image: repeating-linear-gradient(
                 -45deg,
                 white,
                 white 10px,
                 red 10px,
-                red 20px);
+                red 20px);*/
 		}
 		
 		
@@ -53,10 +61,14 @@
             transform: rotateY(180deg);
             backface-visibility: hidden;
             
+            /*
+            Card Front Source
+            http://acbl.mybigcommerce.com/52-playing-cards/
+            */
+            background: url(JH.jpg);
+            background-repeat: no-repeat;
+            background-size: 200px 300px;
             
-            color: red;
-            text-align: center;
-            font-size: 100px;
 		}
 		
 		
@@ -91,6 +103,14 @@
 			border:1px solid black;
             transform: rotateY(180deg);
             backface-visibility: hidden;
+            
+            /*
+            Card Front Source
+            http://acbl.mybigcommerce.com/52-playing-cards/
+            */
+            background: url(AS.jpg);
+            background-repeat: no-repeat;
+            background-size: 200px 300px;
 		}
 		
 		.back {
@@ -100,13 +120,22 @@
 			border:1px solid black;
 			width:200px;
 			height:300px;
-			/* https://css-tricks.com/css3-gradients/ */
-            background-image: repeating-linear-gradient(
+            
+            /*
+            Card Back Source
+            http://acbl.mybigcommerce.com/back-of-cards/
+            */
+            background: url(red_back.jpg);
+            background-repeat: no-repeat;
+            background-size: 200px 300px;
+            
+            /* https://css-tricks.com/css3-gradients/ */
+            /*background-image: repeating-linear-gradient(
                 -45deg,
                 white,
                 white 10px,
                 red 10px,
-                red 20px);
+                red 20px);*/
             backface-visibility: hidden;
 		}
 		
@@ -146,6 +175,7 @@
         input{
             display:none;
         }
+        
 		/* Put your CSS code above. */
 	
 	</style>
@@ -163,8 +193,6 @@
 	<div id="theJack">
 		<div class="face">
 			<!-- You may edit below -->
-			J<br/>
-			♥
 			<!-- You may edit above -->
 		</div>
 		<div class="back"></div>
@@ -173,8 +201,6 @@
 	<div id="theAce">
 		<div class="face">
 			<!-- You may edit below -->
-			A<br/>
-			♠
 			<!-- You may edit above -->
 		</div>
 		<div class="back"></div>

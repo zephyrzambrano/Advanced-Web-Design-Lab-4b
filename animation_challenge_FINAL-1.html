@@ -5,29 +5,28 @@
 	<style>
 		
 		/* Put your CSS code below. */
+        body{
+            background-image: url(img-table.png);
+            background-repeat: no-repeat;
+            background-size: 1300px auto;
 
+        }
+        
+        
 		#theDeck {
 			position:absolute;
-			width:200px;
-			height:300px;
+			width:100px;
+			height:150px;
 			left:800px;
-			top:100px;
+			top:300px;
             z-index:100;
             border: 1px solid black;
-            
-            /*
-            Card Back Source
-            http://acbl.mybigcommerce.com/back-of-cards/
-            */
-            background: url(red_back.jpg);
-            background-repeat: no-repeat;
-            background-size: 200px 300px;
-            /*background-image: repeating-linear-gradient(
+            background-image: repeating-linear-gradient(
                 -45deg,
                 white,
                 white 10px,
                 red 10px,
-                red 20px);*/
+                red 20px);
 		}
 		
 		
@@ -45,7 +44,7 @@
 		#theJack {
 			position:absolute;
 			left:800px;
-			top:100px;
+			top:300px;
             transform-style: preserve-3d;
             z-index: 99;
             
@@ -55,20 +54,19 @@
 			position:absolute;
 			top:0px;
 			left:0px;
-			width:200px;
-			height:300px;
+			width:100px;
+			height:150px;
 			border:1px solid black;
             transform: rotateY(180deg);
             backface-visibility: hidden;
-            
-            /*
-            Card Front Source
-            http://acbl.mybigcommerce.com/52-playing-cards/
-            */
-            background: url(JH.jpg);
+            background-image: url(img-J.png);
             background-repeat: no-repeat;
-            background-size: 200px 300px;
+            background-size: 100px 150px;
+            /*https://www.google.com/search?rlz=1C5CHFA_enUS841US847&biw=1088&bih=558&tbm=isch&sa=1&ei=v8IvXdGUHY-0ggeV5aP4Ag&q=poker+J&oq=poker+J&gs_l=img.3..0l10.55148.55968..56449...0.0..0.59.116.2......0....1..gws-wiz-img.......35i39j0i67.X85x1JEfPWI&ved=0ahUKEwiR8PiqoL3jAhUPmuAKHZXyCC8Q4dUDCAY&uact=5#imgrc=Przw57B3pnbZWM:*/
             
+            color: red;
+            text-align: center;
+            font-size: 100px;
 		}
 		
 		
@@ -86,7 +84,7 @@
 		#theAce {
 			position:absolute;
 			left:800px;
-			top:100px;
+			top:300px;
             transform-style: preserve-3d;
             z-index: 99;
             
@@ -98,19 +96,15 @@
 			position:absolute;
 			top:0px;
 			left:0px;
-			width:200px;
-			height:300px;
+			width:100px;
+			height:150px;
 			border:1px solid black;
             transform: rotateY(180deg);
             backface-visibility: hidden;
-            
-            /*
-            Card Front Source
-            http://acbl.mybigcommerce.com/52-playing-cards/
-            */
-            background: url(AS.jpg);
-            background-repeat: no-repeat;
-            background-size: 200px 300px;
+            background-image: url(ing-A.png);
+                background-repeat: no-repeat;
+            background-size: 100px 150px;
+            /*https://en.wiktionary.org/wiki/ace_of_clubs#/media/File:Poker-sm-241-Ac.png*/
 		}
 		
 		.back {
@@ -118,24 +112,15 @@
 			top:0px;
 			left:0px;
 			border:1px solid black;
-			width:200px;
-			height:300px;
-            
-            /*
-            Card Back Source
-            http://acbl.mybigcommerce.com/back-of-cards/
-            */
-            background: url(red_back.jpg);
-            background-repeat: no-repeat;
-            background-size: 200px 300px;
-            
-            /* https://css-tricks.com/css3-gradients/ */
-            /*background-image: repeating-linear-gradient(
+			width:100px;
+			height:150px;
+			/* https://css-tricks.com/css3-gradients/ */
+            background-image: repeating-linear-gradient(
                 -45deg,
                 white,
                 white 10px,
                 red 10px,
-                red 20px);*/
+                red 20px);
             backface-visibility: hidden;
 		}
 		
@@ -175,7 +160,6 @@
         input{
             display:none;
         }
-        
 		/* Put your CSS code above. */
 	
 	</style>
@@ -193,6 +177,8 @@
 	<div id="theJack">
 		<div class="face">
 			<!-- You may edit below -->
+			<br/>
+			
 			<!-- You may edit above -->
 		</div>
 		<div class="back"></div>
@@ -201,6 +187,8 @@
 	<div id="theAce">
 		<div class="face">
 			<!-- You may edit below -->
+			<br/>
+			
 			<!-- You may edit above -->
 		</div>
 		<div class="back"></div>

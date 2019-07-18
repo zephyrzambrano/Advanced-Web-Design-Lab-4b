@@ -39,8 +39,8 @@
 			left:800px;
 			top:100px;
             transform-style: preserve-3d;
-            z-index: 100;
-            animation: jackmove 2s forwards;
+            z-index: 99;
+            
             /*https://stackoverflow.com/questions/12991164/maintaining-the-final-state-at-end-of-a-css3-animation*/
 		}
 		#theJack .face {
@@ -77,8 +77,6 @@
 			top:100px;
             transform-style: preserve-3d;
             z-index: 99;
-            animation: acemove 2s forwards;
-            animation-delay: 1s;
             
             color: black;
             text-align: center;
@@ -126,27 +124,39 @@
 		}
 		
 		h1 {
-            animation: blackjack 2s  forwards;
-            animation-delay: 2s;
             position:absolute;
 			top:0px;
 			left:0px;
 		}
         
-        input:checked {
-            ;
+        input:checked ~ h1 {
+            animation: blackjack 2s forwards;
+            animation-delay: 4s;
         }
         
-		
+        input:checked ~ #theJack {
+            animation: jackmove 2s forwards;
+        }
+        
+        input:checked ~ #theAce {
+            animation: acemove 2s forwards;
+            animation-delay: 2s;
+        }
+        
+        input{
+            display:none;
+        }
 		/* Put your CSS code above. */
 	
 	</style>
 </head>
 <body>
 	
+    
+    <input type="checkbox" id="hitMe"/>
+
 	<h1>Blackjack!</h1>
 	
-    <input type="checkbox" id="hitMe"/>
     
 	<label id="theDeck" for="hitMe"></label>
 	
